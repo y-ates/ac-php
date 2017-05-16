@@ -181,12 +181,12 @@ touch .ac-php-conf.json
 <tbody>
 <tr>
 <td class="org-left"> ac-php-remake-tags</td>
-<td class="org-left"> if source is changed ,re run this commond for update tags </td>
+<td class="org-left"> if source is changed ,re run this command for update tags </td>
 </tr>
 
 <tr>
 <td class="org-left"> ac-php-remake-tags-all</td>
-<td class="org-left"> **if you find a error, run it an retest**</td>
+<td class="org-left"> **if you find an error, run it and retest**</td>
 </tr>
 
 <tr>
@@ -253,7 +253,7 @@ cp -rf  ~/spacemacs-config/layers/phpplus ~/.spacemacs.d/layers/
 ```
 
 ## Php Doc for complete
-define class memeber type :
+define class memeber type:
 
 `public  $v1;`  =>
 ``` php
@@ -263,7 +263,7 @@ define class memeber type :
 public $v1;
 ```
 
-if you won't define `public $v1 ` you can define in class comment ,like this =>
+if you won't define `public $v1 ` you can define in class comment, like this =>
 ```php
 /**
   * @property  \Test\Testa  $v1
@@ -278,7 +278,7 @@ class Testb  extends Ta {
 ![](https://raw.githubusercontent.com/xcwen/ac-php/master/images/5.png)
 
 
-define class function   return type:
+define class function return type:
 
 `public  function get_v1()`  =>
 ```php
@@ -314,7 +314,7 @@ class Testb  extends Ta {
 ![](https://raw.githubusercontent.com/xcwen/ac-php/master/images/3.png)
 
 
-define variable: (**if function or member no define reutrn value  you need define it  **)
+define variable: (**if function or member has no defined return value you need define it**)
 
 `$value=ff();` =>
 ```php
@@ -322,7 +322,7 @@ define variable: (**if function or member no define reutrn value  you need defin
 $value=ff();
 ```
 
-like this
+like this:
 ```php
 /**
    class define ..
@@ -405,7 +405,7 @@ tags-home-jim-ac-php-phptest/
 
 
 
-### Configue PHP file Search for Large Project
+### Configue PHP file search for large project
 
 config file name  is `.ac-php-conf.json`
 
@@ -514,7 +514,7 @@ set `use-cscope:  false`  in `.ac-php-conf.json`
 
 
 ### Rebuild Tags
-**if source is changed ,re run this commond for update tags**: `ac-php-remake-tags`
+**if source is changed, re run this command to update the tags**: `ac-php-remake-tags`
 
 if php file cannot pass from `phpctags`.
 
@@ -532,7 +532,7 @@ if show:
 no find  file .ac-php-conf.json dir in path list :/home/jim/phptest/
 ```
 
-you need *create file ".ac-php-conf.json" in root of project*
+you need to *create file ".ac-php-conf.json" in root of project*
 
 like this:
 
